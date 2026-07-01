@@ -1,0 +1,76 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+#
+# If you find yourself copying this file between projects, consider bundling it as a gem:
+# https://docs.ruby-lang.org/en/gems/creating-gems/
+#
+# End of https://www.toptal.com/developers/gitignore/api/rails,macos,linux,windows,rubymine
+
+# IDE
+.idea/
+.project
+.vscode/
+
+# Ruby
+*.gem
+*.rbc
+.bundle
+.config
+.irbrc
+.pryrc
+.rspec
+/tmp
+/vendor/bundle
+/vendor/cache
+
+# Rails
+/bin/*
+!/bin/setup
+!/bin/update
+/log/*
+/public/assets
+/public/packs
+/public/assets/.
+/public/packs/.
+/storage/*
+/tmp
+/vendor/bundle
+/vendor/cache
+
+# Database
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/seeds.rb
+/db/development.sqlite3
+/db/test.sqlite3
+
+# Testing
+/coverage/
+/spec/tmp/
+
+# Caching
+/tmp/
+/log/
+
+# Assets
+/public/assets/
+
+# Node.js
+/node_modules/
+
+# For heroku
+/config/master.key
+/config/credentials.yml.enc
+
+# For bundler
+/vendor/bundle/
+
+# Specific to this project
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# OS generated files
+.DS_Store
+.Trashes
+Ehthumbs.db
+Thumbs.db
+# End of https://www.toptal.com/developers/gitignore/api/rails
