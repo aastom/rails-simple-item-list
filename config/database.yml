@@ -1,0 +1,37 @@
+# frozen_string_literal: true
+
+# config/database.yml
+#
+# SQLite. Versions 3.8.0 and up are supported.
+#   development:
+#     adapter: sqlite3
+#     database: db/development.sqlite3
+#   test:
+#     adapter: sqlite3
+#     database: db/test.sqlite3
+#
+#   production:
+#     adapter: sqlite3
+#     database: db/production.sqlite3
+
+default:
+  adapter: sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: db/development.sqlite3
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake --tasks db:test:prepare"
+# The test environment is used exclusively to run your application's
+# test suite. You should never modify this file in production. Change
+# the database instead to a different name and set it into a different environment variable.
+test:
+  <<: *default
+  database: db/test.sqlite3
+
+production:
+  <<: *default
+  database: db/production.sqlite3
